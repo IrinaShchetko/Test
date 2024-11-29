@@ -1,0 +1,17 @@
+.loader {
+  width: 100%;
+  background: #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .progress {
+    height: 20px;
+    background: linear-gradient(90deg, #6a1b9a, #8e24aa);
+    width: 0;
+    transition: width 0.5s ease;
+
+    &.active {
+      width: 75%;
+    }
+  }
+}

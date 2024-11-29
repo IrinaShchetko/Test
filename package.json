@@ -1,0 +1,29 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
+  },
+  "keywords": [],
+  "author": "Irina Shchetko",
+  "license": "ISC",
+  "dependencies": {
+    "less": "^4.2.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-less": "^2.13.2",
+    "parcel": "^2.13.2",
+    "process": "^0.11.10"
+  },
+  "targets": {
+    "default": {
+      "distDir": "./dist",
+      "sourceMap": true
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.tournament-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tournament-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(55, 51, 82, 1);
+}
+
+.status {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin-right: 20px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  padding: 5px 15px;
+  background-color: rgba(0, 187, 64, 1);
+  border-radius: 5px;
+  transition:
+    background-color 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.status.cansel-status {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin-right: 20px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  padding: 5px 15px;
+  background-color: rgba(94, 90, 121, 1);
+  border-radius: 5px;
+  transition:
+    background-color 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.details h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.details p {
+  margin: 5px 0;
+}
+
+.action {
+  margin-left: auto;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+.cancel-btn {
+  background-color: rgba(94, 90, 121, 0.3);
+  color: white;
+  cursor: not-allowed;
+}
+
+.register-btn {
+  background-color: rgba(0, 187, 64, 1);
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
