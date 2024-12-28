@@ -2,7 +2,10 @@ import React from 'react'
 import '../../styles/TournamentItem.less'
 
 const TournamentItem = ({ name, title, status, score }) => {
-  const today = new Date().toLocaleDateString()
+  const today = new Date().toLocaleDateString('en-GB', {
+    day: 'numeric',
+    month: 'long',
+  })
   const currentTime = new Date().toLocaleTimeString([], {
     hour: '2-digit',
     minute: '2-digit',
@@ -17,11 +20,10 @@ const TournamentItem = ({ name, title, status, score }) => {
         {status}
       </div>
       <div className='details'>
-        <h3>{name}</h3>
-        <h4>Title: {title}</h4>
-        <p>Score: {score}</p>
-        <p>Date: {today}</p>
-        <p>
+        <h3 className='title-1'>{title}</h3>
+        <h4 className='title-2'>{name}</h4>
+        <p className='score'>{score}</p>
+        <div className='date-info'>
           <svg
             width='10'
             height='10'
@@ -36,8 +38,8 @@ const TournamentItem = ({ name, title, status, score }) => {
               fill='white'
             />
           </svg>
-          {currentTime}
-        </p>
+          {currentTime}, {today}
+        </div>
       </div>
 
       <div className='action'>

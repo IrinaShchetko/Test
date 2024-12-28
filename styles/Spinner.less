@@ -1,3 +1,4 @@
+@import 'variables.less';
 @keyframes opacityChange {
   0% {
     opacity: 0;
@@ -15,6 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 16px;
   background: transparent;
 }
 
@@ -29,7 +31,7 @@
 
 .dot {
   position: absolute;
-  background-color: rgba(0, 215, 73, 1);
+  background-color: @primary-color;
   border-radius: 50%;
   opacity: 0;
   transition: opacity 0.3s ease;

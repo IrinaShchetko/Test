@@ -9,17 +9,19 @@ import '../styles/App.less'
 
 const App = () => {
   return (
-    <div className='app'>
-      <h1 className='title'>Poker</h1>
-      <Spinner />
-      <PlayerInfo />
-      <Loader progress={45} />
-      <div>
-        {tournaments.map(tournament => (
-          <TournamentItem key={tournament.id} {...tournament} />
-        ))}
+    <section className='app'>
+      <div className='tournament'>
+        <h1 className='title'>GAME</h1>
+        <Spinner />
+        <PlayerInfo />
+        <Loader progress={45} />
+        <div className='app__tournament-list'>
+          {tournaments.map(tournament => (
+            <TournamentItem key={tournament.id} {...tournament} />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
 

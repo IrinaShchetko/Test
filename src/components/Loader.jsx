@@ -4,9 +4,17 @@ import '../../styles/Loader.less'
 const Loader = ({ progress }) => {
   return (
     <div className='loader'>
-      <div className='progress' style={{ width: `${progress}%` }} />
-      <p>Loadind</p>
-      <span className='progress-text'>{progress}%</span>
+      <div className='wrapper'>
+        <div
+          className='progress'
+          style={{
+            width: `${progress}%`,
+          }}
+        />
+      </div>
+      <div className='info'>
+        <p>Loadind {progress}%</p>
+      </div>
     </div>
   )
 }
